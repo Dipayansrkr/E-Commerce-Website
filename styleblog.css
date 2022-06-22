@@ -1,0 +1,210 @@
+.nav {
+  margin-top: -8px;
+  margin-right: -8px;
+  margin-left: -8px;
+  background-color: rgb(255, 164, 43);
+  box-shadow: 0px 3px 65px 0px rgba(0, 0, 0, 0.15);
+}
+.nav .nav-top{
+   display: flex;
+   padding-left: 30px;
+   padding-right: 30px;
+ }
+.nav-top .logo{
+  float:left;
+  width:60%;
+}
+
+.nav-top .nav-side{
+  padding-top: 20px;
+  width:60%;
+}
+.nav-top .nav-side a{
+  text-decoration: none;
+  margin-right: 20px;
+  color: black;
+  font-weight: bold;
+  font-family: 'Mate SC', serif;
+  font-size: 23px;
+  text-align: right;
+  }
+.nav-top .nav-side a:hover{
+  text-decoration : underline;
+  transition: all 1s ease;
+}
+.main{
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-image: url(background.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.main .content{
+  text-align: center;
+  padding-top: 10px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 30px;
+  font-family: 'Mate SC', serif;
+}
+.main .content h2{
+  font-weight: lighter;
+}
+.main .content h1{
+
+  font-size: 50px;
+  font-weight: 500;
+}
+.main .content .part1 {
+  display: flex;
+  margin-top: -1px;
+}
+.main .content .part1 img{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.main .content .part1 .in {
+  text-align: center;
+}
+.main .content .part1 .in h2{
+  font-size: 35px;
+  padding-left: 60px;
+  font-weight: 400;
+}
+.main .content .part1 .in h3{
+  margin-top: -25px;
+  padding-left: 150px;
+  font-weight: lighter;
+}
+.main .content .part1 .in p{
+  padding-left: 80px;
+  padding-right: 30px;
+  font-size: 20px;
+  font-weight: 100;
+}
+.main .content .part1 .in .btn {
+  padding-left: 25px;
+  padding-top: 20px;
+}
+.main .content .part1 .in .btn a:hover{
+  background-color: black;
+  color: orange;
+  border: none;
+  border-bottom: 4px solid orange;
+  transition: 0.5s;
+}
+.main .content .part1 .in .btn a{
+  text-decoration: none;
+  margin: 50px;
+  padding: 10px;
+  background-color: rgb(227,129,0);
+  color: white;
+  font-family: 'Mate SC', serif;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+.keypoint{
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+}
+footer{
+  padding: 5px;
+  text-align: center;
+}
+footer .flex{
+  display: flex;
+}
+footer .footer_logo{
+  margin-top: 55px;
+  width: 30%;
+}
+footer .footer_logo img{
+  margin-right: 50px;
+  width: 100%
+}
+footer .flex2{
+  width: 50%;
+  margin-left: 40px;
+}
+footer .pages{
+  margin-top: -30px;
+}
+footer .pages h3{
+  color: black;
+  font-size: 30px;
+  font-family: 'Mate SC', serif;
+  padding: 5px;
+  font-weight: 300;
+}
+footer .pages a{
+  text-decoration: none;
+  margin: 10px;
+  color: orange;
+  font-size: 20px;
+  font-family: 'Mate SC', serif;
+}
+
+footer .pages a:hover{
+  color: black;
+  text-decoration: underline;
+}
+footer .doc h3{
+  color: black;
+  font-size: 30px;
+  font-family: 'Mate SC', serif;
+  padding: 5px;
+  font-weight: 300;
+}
+footer .doc a{
+  text-decoration: none;
+  margin: 10px;
+  color: orange;
+  font-size: 20px;
+  font-family: 'Mate SC', serif;
+}
+
+footer .doc a:hover{
+  color: black;
+  text-decoration: underline;
+}
+footer .flex3{
+  width:30%;
+  margin-top: -30px;
+  margin-left: 20px;
+}
+footer .social h3{
+  color: black;
+  font-size: 30px;
+  font-family: 'Mate SC', serif;
+  font-weight: 300;
+}
+footer .social a{
+  padding: 10px;
+  color: orange;
+}
+
+footer .social a:hover{
+  color: black;
+  text-decoration: underline;
+}
+footer .contact h3{
+  color: black;
+  font-size: 30px;
+  font-family: 'Mate SC', serif;
+  padding: 5px;
+  font-weight: 300;
+}
+footer .contact a{
+  padding: 20px;
+  color: orange;
+}
+
+footer .contact a:hover{
+  color: black;
+  text-decoration: underline;
+}

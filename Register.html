@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+  <link rel="stylesheet" href="stylereg.css">
+  <title>1Stop Furnitures | Register </title>
+<script src="https://kit.fontawesome.com/38856b43a1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+  <!-- Navigation-Bar-->
+
+    <div class="nav">
+     <div class="nav-top">
+       <div class="logo">
+        <a href="index.html" ><img src="1stoplogo.png" alt="Logo" width="200px"></a>
+       </div>
+       <div class="nav-side">
+        <a href="aboutus.html">About Us</a>
+        <a href="service.html">Services</a>
+        <a href="blog.html">Blogs</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="Register.html">Login/Register</a>
+       </div>
+     </div>
+   </div>
+  <div class="main">
+    <div class="keypoint">
+      <br>
+
+<!--Registration-->
+
+    <div class="register">
+      <h1>Register Yourself</h1>
+      <img src="1stoplogo.png" alt="picture">
+      <div class="form" method="post">
+        <form name="customers" method="post">
+          <input type="text" name="Name" placeholder="Please enter your name"><br>
+          <input type="number" name="Ph Number" placeholder="Phone Number"><br>
+          <input type="text" name="Password" placeholder="Enter your password"><br>
+          <textarea name="Address" placeholder="Your Address"></textarea><br>
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </form>
+      </div>
+    </div>
+
+
+ <!-- Footer -->
+
+   <hr>
+
+   <footer>
+     <div class="flex">
+     <div class="footer_logo">
+       <a href="index.html"><img src="1stoplogo.png" width="150"></a>
+     </div>
+           <div class="flex2">
+       <div class="pages"><h3>Pages</h3>
+         <a href="aboutus.html">About Us</a>
+         <a href="service.html">Services</a>
+         <a href="blog.html">Blogs</a>
+         <a href="">Login </a>
+         <a href="Register.html">Sign Up</a>
+       </div>
+       <div class="doc"><h3>Documents</h3>
+         <a href="">Privacy Policy</a>
+         <a href=""> Terms of Use </a>
+         <a href="">Refund Policy</a>
+       </div>
+     </div>
+   <div class="flex3">
+     <div class="social"><h3>Social Media</h3>
+       <a href=""><i class="fab fa-facebook-f fa-2x"> </i></a>
+       <a href=""><i class="fab fa-instagram fa-2x"> </i></a>
+       <a href=""><i class="fab fa-twitter fa-2x"> </i></a>
+       <a href=""><i class="fab fa-linkedin-in fa-2x"></i></a>
+     </div>
+    <div class="contact"><h3>Contact Us</h3>
+       <a href="mailto:support@1stop.ai"><i class="fas fa-envelope fa-2x"></i></a>
+       <a href="tel: +919876543210"><i class="fas fa-phone fa-2x"></i></a>
+       <a href="https://api.WhatsApp.com/send?phone=+919876543210" target="_blank"><i class="fab fa-whatsapp fa-2x"></i></a>
+     </div>
+     </div>
+       </div>
+     <hr>
+       <p>Copyright &copy;2021 1Stop Allrights Reserved</p>
+   </footer>
+</div>
+</div>
+  <script type="text/javascript">
+   const scriptURL = 'https://script.google.com/macros/s/AKfycbzqYqaBuu4VO1UczEETmlLvapivKohpsWZgtO9ZQAghw6LmKXcpXYVnQPLRoQ5IUODCBA/exec'
+           const form = document.forms['customers']
+
+           form.addEventListener('submit', e => {
+             e.preventDefault()
+             fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+               .then(response => alert("Thank You for Registering with Us . Welcome to our Family "))
+               .catch(error => console.error('Error!', error.message))
+           })
+   </script>
+     </body>
+   </html>

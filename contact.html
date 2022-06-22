@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>1Stop Furnitures | Contact Us</title>
+    <script src="https://kit.fontawesome.com/38856b43a1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+      <!--Navigation Bar-->
+
+      <div class="nav">
+       <div class="nav-top">
+         <div class="logo">
+          <a href="index.html" ><img src="1stoplogo.png" alt="Logo" width="200px"></a>
+         </div>
+         <div class="nav-side">
+          <a href="aboutus.html">About Us</a>
+          <a href="service.html">Services</a>
+          <a href="blog.html">Blogs</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="Register.html">Login/Register</a>
+         </div>
+       </div>
+     </div>
+
+     <!--Contents-->
+
+<div class="main">
+   <div class="contact_container">
+     <h2>Contact Us</h2>
+     <div class="g_map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d3012.7588863646333!2d91.60230303551869!3d26.10563248240408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x375a43e72f5dc4bd%3A0x1d14b6a43f905f65!2sKahikuchi%20Rd%2C%20Borjhar%2C%20Guwahati%2C%20Assam%20781015!3m2!1d26.105955899999998!2d91.6038782!5e0!3m2!1sen!2sin!4v1625086978850!5m2!1sen!2sin" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+     </div>
+     <div class="contact_content">
+       <p><b>Address :</b>Kahikuchi Rd, Borjhar, Guwahati, Assam 781015</p>
+       <p><b>Call :</b>+91-9876543210</p>
+       <p><b>Mail :</b>1stopf@gmail.com</p>
+     </div>
+   </div>
+   <div class="keypoint">
+   <hr>
+
+   <!--Feedback Form -->
+
+      <div class="feed">
+        <h2>We would love to know your opinion</h2>
+        <div class="feed_form" method="post">
+          <form name="submit-googlesheet" method="post">
+            <input type="text" name="Name" placeholder="Please enter your name"><br>
+            <input type="email" name="Email" placeholder="Email"><br>
+            <input type="number" name="Ph Number" placeholder="Phone Number"><br>
+            <textarea name="Review" placeholder="Write your review"></textarea><br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+          </form>
+        </div>
+      </div>
+
+<hr>
+
+  <!--Footer-->
+  
+<footer>
+  <div class="flex">
+  <div class="footer_logo">
+    <a href="index.html"><img src="1stoplogo.png" width="150"></a>
+  </div>
+        <div class="flex2">
+    <div class="pages"><h3>Pages</h3>
+      <a href="aboutus.html">About Us</a>
+      <a href="service.html">Services</a>
+      <a href="blog.html">Blogs</a>
+      <a href="">Login </a>
+      <a href="Register.html">Sign Up</a>
+    </div>
+    <div class="doc"><h3>Documents</h3>
+      <a href="">Privacy Policy</a>
+      <a href=""> Terms of Use </a>
+      <a href="">Refund Policy</a>
+    </div>
+  </div>
+<div class="flex3">
+  <div class="social"><h3>Social Media</h3>
+    <a href=""><i class="fab fa-facebook-f fa-2x"> </i></a>
+    <a href=""><i class="fab fa-instagram fa-2x"> </i></a>
+    <a href=""><i class="fab fa-twitter fa-2x"> </i></a>
+    <a href=""><i class="fab fa-linkedin-in fa-2x"></i></a>
+  </div>
+ <div class="contact"><h3>Contact Us</h3>
+    <a href="mailto:support@1stop.ai"><i class="fas fa-envelope fa-2x"></i></a>
+    <a href="tel: +919876543210"><i class="fas fa-phone fa-2x"></i></a>
+    <a href="https://api.WhatsApp.com/send?phone=+919876543210" target="_blank"><i class="fab fa-whatsapp fa-2x"></i></a>
+  </div>
+  </div>
+    </div>
+  <hr>
+    <p>Copyright &copy;2021 1Stop Allrights Reserved</p>
+</footer>
+
+
+<script type="text/javascript">
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxDqX0stHaAK2nDyVvNdznSoCdvtjGvPaLQ74AGWeSoBJViWj4ITesHeC-Dhg0mDhsfxQ/exec'
+            const form = document.forms['submit-googlesheet']
+
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thank you for your review !!! Hope you had a great time shopping with us ."))
+                .catch(error => console.error('Error!', error.message))
+            })
+</script>
+  </body>
+</html>
